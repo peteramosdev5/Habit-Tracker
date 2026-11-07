@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Peter Amos">
+    <meta name="description" content="My Habit Tracker Complete Project">
+    <title>Habit Tracker</title>
+    <link rel="stylesheet" href="habit.css">
+    <link rel="icon" href="/IMG/circle-plus.svg">
+</head>
+<body>
+    <main class="container">
+    <header>
+        <section class="left">
+        <div class="svg"></div>
+        <div class="text">
+        <h1>Daily Habit Tracker</h1>
+        <p class="para">Small habits. Big results.</p>
+        </div>
+        </section>
+        <section class="date" id="currentDate"></section>
+    </header>
+    <section class="section-input">
+        <input type="text" id="taskInput" placeholder="Enter a new habit (e.g. Drink water)">
+        <select name="habitFreq" id="habitFreq">
+            <option value="daily">Daily</option>
+            <option value="weekly">Weekly</option>
+            <option value="monthly">Monthly</option>
+        </select>
+        <button type="button" id="addBut">Add Habit</button>
+    </section>
+    <div class="button-div">
+        <button class="button-color more" type="button" id="allBut">All</button>
+        <button class="button-color" type="button" id="todayBut">Today</button>
+        <button class="button-color" type="button" id="compBut">Completed</button>
+        <button class="button-color" type="button" id="notCom">Not Completed</button>
+    </div>
+    <ul id="taskList"></ul>
+
+    <footer>
+        <span id="totalHab">Total Habits:</span>
+        <span id="comHab">Completed</span>
+        <span id="pendingHab">Pending</span>
+    </footer>
+    </main>
+    <script src="habit.js"></script>
+</body>
+</html>
